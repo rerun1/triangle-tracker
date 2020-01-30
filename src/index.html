@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <title>Triangle Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Triangle Tracker</h1>
+      <p>Triangles have three sides and they may be created equal, but the sum of two sides can not be less than or equal to the third. Enter three numbers to find out if you've created a triangle and, if so, what type of triangle it is.</p>
+
+      <form id="lengths">
+        <div class="form-row form-inline mt-2">
+          <div class="col-sm-12 form-group">
+            <label for="side1" class="mr-2">Side 1 length:</label>
+            <input type="number" id="side1"  class="form-control" min="1" required>
+          </div>
+        </div>
+        <div class="form-row form-inline mt-2">
+          <div class="col-sm-12 form-group">
+            <label for="side2" class="mr-2">Side 2 length:</label>
+            <input type="number" id="side2"  class="form-control" min="1" required>
+          </div>
+        </div>
+        <div class="form-row form-inline mt-2 mb-4">
+          <div class="col-sm-12 form-group">
+            <label for="side2" class="mr-2">Side 3 length:</label>
+            <input type="number" id="side3"  class="form-control" min="1" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">What Type of Triangle is it?</button>
+      </form>
+      <div id="tracker" class="answer">
+        <p id="answer"></p>
+      </div>
+    </div>
+  </body>
+</html>
